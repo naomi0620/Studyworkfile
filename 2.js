@@ -18,3 +18,5 @@ Student.prototype.sayGrade=function(){
 	alert("mygrade:"+this.grade+".")
 }
 var a=new Student("lily","80");
+a.sayHello();
+
