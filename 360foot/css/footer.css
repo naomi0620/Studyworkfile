@@ -1,0 +1,26 @@
+* { margin: 0; padding: 0; }
+
+.footer { clear: both; padding: 40px 0 50px; background-color: #f6f6f6; }
+.footer .contain { position: relative; overflow: hidden; margin: 0 auto; width: 1240px; }
+.footer .contain .leftcon { float: left; margin-left: -20px; }
+.footer .contain .leftcon dl { float: left; width: 170px; padding-top: 10px; padding-left: 20px; border-left: 1px solid #e5e5e5; line-height: 2; }
+.footer .contain .leftcon dl dt { margin-bottom: 10px; line-height: 22px; font-size: 18px; line-height: 1; }
+.footer .contain .leftcon dl a { font-size: 14px; color: #666; text-decoration: none; }
+.footer .contain .leftcon dl a:hover { color: green; }
+.footer .contain .leftcon dl:nth-child(2) { margin: 0 30px 0 -30px; }
+.footer .contain .leftcon::before, .footer .contain .leftcon::after { content: ""; display: table; }
+.footer .contain .leftcon::after { clear: both; }
+.footer .contain .rightcon { float: right; position: relative; width: 270px; padding-top: 10px; overflow: hidden; }
+.footer .contain .rightcon h3 { margin-bottom: 20px; font-size: 18px; line-height: 1; font-weight: bold; }
+.footer .contain .rightcon a { position: absolute; top: 10px; right: 0; padding-left: 30px; line-height: 18px; font-size: 14px; color: #666; background-image: url("../img/t018e1bdf2122a4b64b.png"); background-position: -150px -484px; background-repeat: no-repeat; }
+.footer .contain .rightcon ul { margin-left: -30px; list-style-type: none; }
+.footer .contain .rightcon ul li { display: inline; float: left; width: 120px; margin-left: 30px; }
+.footer .contain .rightcon ul li div { width: 120px; height: 120px; }
+.footer .contain .rightcon ul li div img { width: 100%; height: 100%; }
+.footer .contain .rightcon ul li p { text-align: center; line-height: 30px; color: #999; font-size: 12px; }
+.footer .contain .rightcon ul::before, .footer .contain .rightcon ul::after { content: " "; display: table; }
+.footer .contain .rightcon ul::after { clear: both; }
+
+.copyright { padding: 40px 0; text-align: center; line-height: 2; color: #999; font-size: 12px; }
+
+/*# sourceMappingURL=footer.css.map */

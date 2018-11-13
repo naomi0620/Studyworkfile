@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	</head>
+	<body>
+		<footer class="footer">
+			<div class="contain">
+				<div class="leftcon">		
+				</div>
+				<div class="rightcon">
+					<h3>关注我们</h3>
+					<a href="javascript:;">官方微博</a>
+					<ul>
+						<li>
+							<div>
+								<img src="img/wechat.png"/>
+							</div>
+							<p>官方微信</p>
+						</li>
+						<li>
+							<div>
+							<img src="img/weibo.png"/>
+							</div>
+							<p>技术支持</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<div class="copyright">
+			<p>Copyright©2005-2018 360.cn 版权所有 360互联网安全中心</p>
+			<p><a style="color:#999" href="http://www.miitbeian.gov.cn/">京ICP证080047号[京ICP备08010314号-6]</a><a style="color:#999" href="javascript:;"> 文网文[2009]024号</a><a style="color:#999" href="javascript:;"> 新出网证（京）字069号</a> <a style="color:#999"  href="javascript:;">工商营业执照</a>				
+			</p>
+			<p><a style="color:#999" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000006"><img src="img/copyright.png">京公网安备 11000002000006号</a></p>
+		</div>
+	
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script  >
+		$.ajax({
+	url:"js/footinfo.js",
+	dataType:"json",
+	async:true,
+	success:function(data){
+		for (var i=0;i<data.length;i++) {
+			$(".leftcon").append("<dl></dl>");
+			$(".leftcon").children().eq(i).append("<dt>"+data[i].title+"</dt>");
+			for (var j=0;j<data[i].con.length;j++) {
+				$(".leftcon").children().eq(i).append("<dd><a href=javascript:;>"+data[i].con[j]+"</a></dd>")
+			}
+		}
+	}
+})
+
+	</script>
+</html>

@@ -18,5 +18,5 @@ Student.prototype.sayGrade=function(){
 	alert("mygrade:"+this.grade+".")
 }
 var a=new Student("lily","80");
-a.sayHello();
+a.sayHello();28
 git is useful but not too difficult to learn 
