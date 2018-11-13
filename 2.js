@@ -20,3 +20,4 @@ Student.prototype.sayGrade=function(){
 var a=new Student("lily","80");
 a.sayHello();
 git is useful
+but its a little difficult
